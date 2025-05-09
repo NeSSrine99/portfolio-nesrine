@@ -20,8 +20,8 @@ const CertifCard = ({
         className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105"
       />
 
-      {/* طبقة المعلومات تظهر عند الـ hover */}
-      <div className="absolute inset-0 bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4 space-y-2">
+      {/* the information over */}
+      <div className="absolute inset-0 bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4 space-y-2">
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-sm">{platform}</p>
         <p className="text-xs">{date}</p>

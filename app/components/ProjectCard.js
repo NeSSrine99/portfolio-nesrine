@@ -1,19 +1,22 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from "./Button";
-import { PiFilmReel } from "react-icons/pi";
-import { FaCodeBranch } from "react-icons/fa6";
 import Link from "next/link";
+import { PiFilmReel } from "react-icons/pi";
+import { FaCodeBranch } from "react-icons/fa";
+import Skills from "./Skills";
+import allSkills from "../api/skills/route";
 
 const ProjectCard = ({
   id,
-  imageDev = "/images/mohsen-taheri-fZRsSiTCAR4-unsplash.jpg",
-  imageFigma = "/images/mohsen-taheri-fZRsSiTCAR4-unsplash.jpg",
-  name = "Project Name",
-  desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  liveSite = "https://www.emc.mc/",
-  codeGitlab = "https://gitlab.com/devopsproject7692523/farmaconnect.git",
+  imageDev,
+  imageFigma,
+  name,
+  desc,
+  liveSite,
+  codeGitlab,
+  skills, // إضافة skills كـ prop
 }) => {
   const [activeCard, setActiveCard] = useState("dev");
 
@@ -48,31 +51,15 @@ const ProjectCard = ({
               <p className="text-sm text-gray-700">{desc}</p>
 
               <div className="flex flex-wrap items-center gap-3 mt-2">
-                <img
-                  src="/images/js.svg"
-                  alt="JS"
-                  className="w-[35px] h-[35px]"
-                />
-                <img
-                  src="/images/next.svg"
-                  alt="Next.js"
-                  className="w-[35px] h-[35px]"
-                />
-                <img
-                  src="/images/react.svg"
-                  alt="React"
-                  className="w-[35px] h-[35px]"
-                />
-                <img
-                  src="/images/Skills.svg"
-                  alt="Skills"
-                  className="w-[35px] h-[35px]"
-                />
-                <img
-                  src="/images/strapi.svg"
-                  alt="Strapi"
-                  className="w-[35px] h-[35px]"
-                />
+                {/* عرض المهارات هنا */}
+                {skills.map((skill, index) => (
+                  <span
+                    key={index}
+                    className="text-xs text-gray-600 bg-gray-200 px-2 py-1 rounded-md"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
 
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full mt-3 gap-2 sm:gap-0">

@@ -13,7 +13,7 @@ const CarouselCertif = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
   return (
-    <div>
+    <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1   lg:gap-8 sm:gap-4 gap-4">
       {certfications.map((certfication) => (
         <CertifCard key={certfication.id} {...certfication} />
       ))}

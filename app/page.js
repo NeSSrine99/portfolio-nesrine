@@ -1,10 +1,9 @@
 import ListCardService from "@/app/components/ListCardService";
-import ServiceCard from "@/app/components/ServiceCard";
-import Image from "next/image";
-import ProjectCard from "./components/ProjectCard";
 import ListProjectCard from "./components/ListProjectCard";
-import CertifCard from "./components/CertifCard";
 import CarouselCertif from "./components/CarouselCertif";
+import ScrollingSkills from "./components/ScrollingSkills";
+import CarouselSoftSkills from "./components/CarouselSoftskills";
+import softSkills from "./data/page";
 
 export default function Home() {
   return (
@@ -12,6 +11,8 @@ export default function Home() {
       <ListCardService />
       <ListProjectCard />
       <CarouselCertif />
+      <ScrollingSkills />
+      <CarouselSoftSkills skills={softSkills} />
     </div>
   );
 }
