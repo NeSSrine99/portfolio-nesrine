@@ -14,8 +14,8 @@ const Carousel = () => {
   const visibleSkills = softSkills.slice(startIndex, startIndex + visibleCount);
 
   return (
-    <div className="relative flex items-center justify-center py-4 border-2 rounded-2xl  max-w-[450px] min-w-[350px] bg-purple-950">
-      <div className=" flex justify-between items-center mb-2 bg-purple-400">
+    <div className="relative flex items-center justify-center py-4  sm:px-1 border-2 rounded-2xl  max-w-[450px] min-w-[350px] ">
+      <div className=" flex justify-between items-center ">
         <button
           onClick={() => setStartIndex(Math.max(startIndex - 1, 0))}
           className="absolute left-1 top-1/2 "
@@ -33,7 +33,7 @@ const Carousel = () => {
           <CiCircleChevRight size={28} />
         </button>
       </div>
-      <div className="flex gap-4">
+      <div className="flex gap-4 px-4 ">
         {visibleSkills.map((skill) => (
           <SoftSkillsCard key={skill.id} skill={skill} />
         ))}

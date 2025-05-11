@@ -1,26 +1,24 @@
 import React from "react";
 
 const Button = ({
-  children, //content of button
+  children,
   type = "button",
-  variant = "primary", // primary, secondary, danger...
-  className = "", //to make class name variant
-  onClick, // i need this function to view cardShopping cart when i click in the button of panier
+  variant = "primary",
+  className = "",
+  onClick,
 }) => {
   const baseStyles = "px-4 py-2 rounded-xl";
 
   const variants = {
-    primary:
-      "bg-primary border-2 border-primary hover:bg-hoverButtonPrimary text-white",
-    secondary: "bg-secondary hover:bg-hoverButtonSecondary text-white",
-    tertiary: "border-2 border-inside border-primary bg-white text-primary ",
-    third: " text-primary  backdrop-blur-md",
+    primary: "button-hover-gradient",
+    secondary: "button-secondary-gradient",
+    third: "button-third", // استخدمنا هنا class الخاصة بالـ third
   };
 
   return (
     <button
       type={type}
-      className={`${baseStyles} ${variants[variant]}  ${className}`}
+      className={`${baseStyles} ${variants[variant]} ${className}`}
       onClick={onClick}
     >
       {children}

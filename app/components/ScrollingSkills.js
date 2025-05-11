@@ -8,13 +8,13 @@ const ScrollingSkills = ({
   showPercentage = true,
 }) => {
   return (
-    <div className="overflow-hidden w-full py-6 border-2 border-gray-500 rounded-xl  bg-purple-200">
-      <div className="animate-scroll flex gap-2 w-max">
+    <div className="overflow-hidden w-full py-6  bg-white rounded-xl  ">
+      <div className="animate-scroll flex items-center justify-center gap-2 w-max">
         {[...skills, ...skills].map(
           ({ id, name, icon: Icon, percentage, color }, index) => (
             <div
               key={`${id}-${index}`}
-              className="flex flex-col items-center min-w-[120px]"
+              className="flex flex-col items-center justify-center min-w-[120px]"
             >
               <Icon
                 size={40}

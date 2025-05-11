@@ -1,20 +1,20 @@
 const Services = [
   {
     id: 1,
-    logo: "designe.svg",
-    name: "designer",
+    logo: "group.svg",
+    name: "Designer",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
   },
   {
     id: 2,
-    logo: "designe.svg",
-    name: "FrontEnd Developer",
+    logo: "services (1).svg",
+    name: "Développer",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
   },
   {
     id: 3,
-    logo: "designe.svg",
-    name: "Tester",
+    logo: "services.svg",
+    name: "Devops",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
   },
 ];

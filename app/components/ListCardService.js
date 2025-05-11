@@ -16,7 +16,9 @@ const ListCardService = () => {
 
   return (
     <div className="p-4">
-      <h1>List Of Services</h1>
+      <h1 className="text-4xl font-semibold text-Primary text-center my-10">
+        Services
+      </h1>
       <div className="flex flex-wrap items-center justify-center lg:gap-8 md:gap-4 gap-4">
         {services.map((service) => (
           <ServiceCard key={service.id} {...service} />

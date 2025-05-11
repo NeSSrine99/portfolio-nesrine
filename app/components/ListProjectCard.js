@@ -14,8 +14,11 @@ const ListProjectCard = () => {
   }, []);
   return (
     <div className="p-4">
-      <h1>List Of Services</h1>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1   lg:gap-8 md:gap-4 gap-4">
+      <h1 className="text-4xl font-semibold text-Primary text-center my-10">
+        {" "}
+        Projects
+      </h1>
+      <div className="md:grid lg:grid-cols-4 md:grid-cols-2 flex flex-col items-center justify-center   lg:gap-8 md:gap-4 gap-4">
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

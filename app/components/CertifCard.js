@@ -12,16 +12,16 @@ const CertifCard = ({
   link = "https://coursera.org/verify/LUJ6WYL6XGRE",
 }) => {
   return (
-    <div className="relative max-w-sm w-full overflow-hidden rounded-xl group shadow-md hover:shadow-xl transition-shadow duration-300">
+    <div className="relative max-w-[200px] max-h-[200px]  w-full overflow-hidden  group  hover:shadow-xl transition-shadow duration-300 border-2b ring-2 ring-purple-500 ">
       {/* صورة الشهادة */}
       <img
         src={image}
         alt={title}
-        className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105"
+        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
       />
 
       {/* the information over */}
-      <div className="absolute inset-0 bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4 space-y-2">
+      <div className="absolute inset-0 bg-purple-800 bg-opacity-70 text-white opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4 space-y-2  top-0 bottom-0">
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-sm">{platform}</p>
         <p className="text-xs">{date}</p>
