@@ -40,20 +40,21 @@ const TestimonialsSection = () => {
           Here are some kind words from our clients
         </p>
       </div>
-
-      <motion.div
-        className="grid gap-10 md:grid-cols-2 lg:grid-cols-3"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        {testimonials.map((item) => (
-          <motion.div key={item.id} variants={cardVariants}>
-            <TestimonialCard {...item} />
-          </motion.div>
-        ))}
-      </motion.div>
+      <main className="flex flex-col items-center justify-center py-10 lg:px-20">
+        <motion.div
+          className="grid gap-10 md:grid-cols-2 lg:grid-cols-2"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          {testimonials.map((item) => (
+            <motion.div key={item.id} variants={cardVariants}>
+              <TestimonialCard {...item} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </main>
     </section>
   );
 };

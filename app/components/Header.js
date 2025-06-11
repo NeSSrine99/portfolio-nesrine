@@ -16,7 +16,7 @@ const Header = () => {
         transition={{ duration: 0.8 }}
         className="relative z-10 max-w-2xl px-4 mx-auto mt-20 flex flex-col items-center text-center gap-4"
       >
-        <p className="text-sm tracking-wide uppercase text-cyan-300">
+        <p className="text-sm tracking-wide uppercase ">
           Hello, I'm Nesrine Nasri
         </p>
         <h1 className="text-3xl lg:text-4xl font-bold leading-tight">

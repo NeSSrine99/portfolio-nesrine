@@ -53,10 +53,6 @@ const About = () => {
         meaningful personal projects, improving my skills, and exploring new
         opportunities to grow in tech.
       </motion.p>
-
-      <motion.div variants={item}>
-        <Button variant="third">Download CV</Button>
-      </motion.div>
     </motion.div>
   );
 };

@@ -36,11 +36,15 @@ const ListCardService = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-semibold text-Primary text-center my-10"
+        className="text-4xl font-semibold text-black text-center my-10"
         id="services"
       >
-        Services
+        Professional <span className="text-Primary">Services I </span>Offer
       </motion.h1>
+      <p className="text-center text-gray-500 max-w-xl mx-auto mb-10">
+        From design to development, I provide solutions to bring your ideas to
+        life.
+      </p>
       <main className="flex flex-col items-center justify-center py-10  lg:px-20">
         <motion.div
           className="grid lg:grid-cols-3 md:grid-cols-2  lg:gap-4 md:gap-4 gap-4"
