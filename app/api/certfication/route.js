@@ -25,7 +25,7 @@ const Certfications = [
   },
   {
     id: 4,
-    image: "/images/Cute.jpg",
+    image: "/images/certif.jpg",
     title: "Front-End",
     platform: "Coursera",
     date: "12/06/2024",

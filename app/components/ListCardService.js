@@ -1,8 +1,24 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import ServiceCard from "./ServiceCard";
-import Services from "/app/api/services/route";
+
+// حركات الأنيميشن
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const ListCardService = () => {
   const [services, setServices] = useState([]);
@@ -16,14 +32,29 @@ const ListCardService = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-4xl font-semibold text-Primary text-center my-10">
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-4xl font-semibold text-Primary text-center my-10"
+        id="services"
+      >
         Services
-      </h1>
-      <div className="flex flex-wrap items-center justify-center lg:gap-8 md:gap-4 gap-4">
-        {services.map((service) => (
-          <ServiceCard key={service.id} {...service} />
-        ))}
-      </div>
+      </motion.h1>
+      <main className="flex flex-col items-center justify-center py-10  lg:px-20">
+        <motion.div
+          className="grid lg:grid-cols-3 md:grid-cols-2  lg:gap-4 md:gap-4 gap-4"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          {services.map((service) => (
+            <motion.div key={service.id} variants={itemVariants}>
+              <ServiceCard {...service} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </main>
     </div>
   );
 };

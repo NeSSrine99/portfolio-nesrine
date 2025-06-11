@@ -12,7 +12,7 @@ const Button = ({
   const variants = {
     primary: "button-hover-gradient",
     secondary: "button-secondary-gradient",
-    third: "button-third", // استخدمنا هنا class الخاصة بالـ third
+    third: "button-third",
   };
 
   return (

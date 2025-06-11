@@ -1,25 +1,37 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-const ServiceCard = ({
-  id,
+const ElegantServiceCard = ({
   logo = "designe.svg",
-  name = "nom",
-  desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
+  name = "Service Name",
+  desc = "This is a short description of the service you provide in an elegant and simple way.",
+  delay = 0,
 }) => {
   return (
-    <div className="flex flex-col  item-center gap-2 justify-center  min-w-64 max-w-72  p-4  rounded-4xl outline-2  outline-zinc-400  shadow-[2px_2px_2px_2px_rgba(0,0,0,0.25)]">
-      <div className="flex items-center justify-center">
-        <img src={`/images/${logo}`} alt="design-logo" className="w-11 h-11 " />
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay }}
+      whileHover={{ scale: 1.03 }}
+      className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 max-w-sm"
+    >
+      {/* Icon container */}
+      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-tr from-cyan-400 to-purple-500 flex items-center justify-center shadow-md">
+        <img src={`/images/${logo}`} alt={name} className="w-8 h-8" />
       </div>
 
-      <div className="flex flex-col gap-3 text-center">
-        <h3 className="text-cyan-700 text-xl font-semibold font-['Roboto']">
-          {name}
-        </h3>
-        <p className="text-sm text-neutral-600 leading-relaxed">{desc}</p>
-      </div>
-    </div>
+      {/* Title */}
+      <h3 className="text-center text-lg font-semibold text-gray-800 group-hover:text-cyan-600 transition duration-300">
+        {name}
+      </h3>
+
+      {/* Description */}
+      <p className="text-center text-sm text-gray-500 mt-3 leading-relaxed">
+        {desc}
+      </p>
+    </motion.div>
   );
 };
 
-export default ServiceCard;
+export default ElegantServiceCard;

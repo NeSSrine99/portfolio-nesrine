@@ -1,55 +1,42 @@
 "use client";
 
-import { useState } from "react";
-import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import CertifCard from "./CertifCard";
 import Certifications from "../data/certifications";
 
-const Carousel = () => {
-  const [startIndex, setStartIndex] = useState(0);
-  const visibleCount = 1;
-
-  // احصل على الشهادات المرئية فقط
-  const visibleCertifications = Certifications.slice(
-    startIndex,
-    startIndex + visibleCount
-  );
-
-  const canGoNext = startIndex + visibleCount < Certifications.length;
-  const canGoBack = startIndex > 0;
-
+const CarouselCertif = () => {
   return (
-    <div className="relative flex items-center justify-center py-4 sm:px-1 border-2 rounded-2xl max-w-[200px] ">
-      {/* أزرار التنقل */}
-      {canGoBack && (
-        <button
-          onClick={() => setStartIndex(startIndex - 1)}
-          className="absolute left-1 top-1/2 transform -translate-y-1/2 z-10"
-        >
-          <CiCircleChevLeft size={28} />
-        </button>
-      )}
-      {canGoNext && (
-        <button
-          onClick={() => setStartIndex(startIndex + 1)}
-          className="absolute right-1 top-1/2 transform -translate-y-1/2 z-10"
-        >
-          <CiCircleChevRight size={28} />
-        </button>
-      )}
-
-      {/* البطاقات */}
-      <div className="flex gap-4 px-4">
-        {visibleCertifications.map((certification) => (
-          <CertifCard
+    <div className="w-[280px]  mx-auto py-4 px-4 relative  rounded bg-white">
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={5}
+        slidesPerView={1.5}
+        centeredSlides={true}
+        loop={true}
+        navigation={true}
+        pagination={{ clickable: true }}
+        className="mySwiper custom-swiper"
+        style={{ paddingBottom: "30px" }}
+      >
+        {Certifications.map((certification) => (
+          <SwiperSlide
             key={certification.id}
-            {...certification} // مرر كل خصائص الشهادة كـ props
-          />
+            className="scale-95 transition-transform duration-300 hover:scale-100"
+          >
+            <div className="shadow-xl  overflow-hidden">
+              <CertifCard {...certification} />
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 };
 
-export default Carousel;
+export default CarouselCertif;

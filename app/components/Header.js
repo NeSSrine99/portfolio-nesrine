@@ -1,29 +1,34 @@
+"use client";
+
 import React from "react";
-import Navbar from "./Navbar";
 import Button from "./Button";
+import Navbar from "./Navbar";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="flex flex-wrap lg:justify-between justify-center gap-4 items-center bg-cyan-900  bg-cover bg-center  pt-4 pb-16 rounded-b-[50px] lg:px-40 shadow-2xl">
+    <header className="relative bg-[url('/images/header1.jpeg')] bg-cover bg-center text-white rounded-b-3xl pb-20 lg:h-[700px]">
       <Navbar />
-      <div className=" max-w-[600px] min-w-[250px] text-center lg:text-left">
-        <p className=" text-white text-xl font-medium font-['Roboto']">
-          Hello, I'm Nesrin Nasri
+
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="relative z-10 max-w-2xl px-4 mx-auto mt-20 flex flex-col items-center text-center gap-4"
+      >
+        <p className="text-sm tracking-wide uppercase text-cyan-300">
+          Hello, I'm Nesrine Nasri
         </p>
-        <h1 className="justify-start text-white text-4xl font-medium font-['Roboto']">
+        <h1 className="text-3xl lg:text-4xl font-bold leading-tight">
           A passionate Web Developer crafting modern and efficient digital
           experiences.
         </h1>
-        <p className=" justify-center text-white text-2xl font-medium font-['Roboto'] tracking-[7.20px]">
-          {" "}
+        <p className="text-lg tracking-widest font-light">
           Let’s build something great together!
         </p>
-        <Button variant="secondary">Show My Work </Button>
-      </div>
-      <div className="w-96 h-96 max-w-96 min-w-64 p-2.5 bg-gradient-to-bl from-white/50 to-fuchsia-800/50 rounded-full inline-flex justify-start items-center gap-2.5 opacity-90">
-        <img src="/images/moi.png" alt="moi" className="flex-1 self-stretch" />
-      </div>
-    </div>
+        <Button variant="secondary">Show My Work</Button>
+      </motion.div>
+    </header>
   );
 };
 

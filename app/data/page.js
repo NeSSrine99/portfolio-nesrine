@@ -8,52 +8,52 @@ const softSkills = [
   },
   {
     id: 2,
-    icon: "🗣️ ",
-    name: " Communication Skills",
+    icon: "🗣️",
+    name: "Communication Skills",
     description:
-      "Clearly expressing technical ideas, problems, and solutions to teammates or clients.Good technical writing (documentation).",
+      "Ability to explain ideas clearly and share thoughts effectively with others.",
   },
   {
     id: 3,
     icon: "🤝",
-    name: " Teamwork",
+    name: "Teamwork",
     description:
-      "Collaborating effectively in multidisciplinary development teams.Respecting diverse perspectives and engaging in a cooperative environment.",
+      "Working well with others and contributing to group goals effectively.",
   },
   {
     id: 4,
-    icon: "⏱️ ",
-    name: " Time Management",
+    icon: "⏱️",
+    name: "Time Management",
     description:
-      "Organizing tasks, setting priorities, and meeting deadlines.Creativity",
+      "Organizing time efficiently to handle tasks and meet deadlines properly.",
   },
   {
     id: 5,
     icon: "💡",
     name: "Creativity",
     description:
-      "Finding unconventional solutions to coding problems.Thinking about user experience from new angles.",
+      "Thinking of unique ideas and using innovation to solve coding problems.",
   },
   {
     id: 6,
     icon: "🔄",
-    name: " Continuous Learning",
+    name: "Continuous Learning",
     description:
-      "Embracing technological changes and a desire to continually improve skills.",
+      "Always seeking to grow skills and stay updated with new technologies.",
   },
   {
     id: 7,
     icon: "🧘",
-    name: "  Patience & Focus",
+    name: "Patience & Focus",
     description:
-      "Dealing with bugs and repetitive issues without losing motivation or concentration.",
+      "Staying calm and focused when solving bugs or repetitive technical issues.",
   },
   {
     id: 8,
-    icon: "📈 ",
-    name: "  Analytical Thinking",
+    icon: "📈",
+    name: "Analytical Thinking",
     description:
-      "Understanding complex systems and interpreting data to optimize performance.",
+      "Using logic and analysis to understand systems and improve performance.",
   },
 ];
 
