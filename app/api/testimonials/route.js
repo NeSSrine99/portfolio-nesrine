@@ -21,7 +21,7 @@ const Testimonials = [
     name: "Rahma Habeili",
     title: "Mobile Developer",
     testimonial:
-      "The service was smooth, professional, and efficient. Highly recommend!",
+      "Working with you was a true pleasure. Your motivation and positive energy really stood out in our group.",
 
     image: "/images/rahma.jpg",
   },
@@ -30,18 +30,18 @@ const Testimonials = [
     name: "Ahmed Tombari",
     title: "Full-Stack Developer",
     testimonial:
-      "The service was smooth, professional, and efficient. Highly recommend!",
+      "Your listening and team spirit made all the difference. I’m glad to have shared this journey with you.",
 
     image: "/images/ahmed.jpg",
   },
   {
     id: 5,
-    name: "Ahmed Tombari",
+    name: "Fatma Akermi",
     title: "Full-Stack Developer",
     testimonial:
-      "The service was smooth, professional, and efficient. Highly recommend!",
+      " Thank you for your creativity and spontaneity. You always surprised us in the best ways.",
 
-    image: "/images/ahmed.jpg",
+    image: "/images/fatma1.png",
   },
 ];
 

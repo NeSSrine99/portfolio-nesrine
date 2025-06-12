@@ -12,7 +12,7 @@ import Certifications from "../data/certifications";
 
 const CarouselCertif = () => {
   return (
-    <div className="w-[280px]  mx-auto py-4 px-4 relative  rounded bg-white">
+    <div className="w-[280px]  mx-auto py-4 px-4 relative  rounded border-2 shadow border-gray-200 bg-white">
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={5}

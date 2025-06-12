@@ -32,9 +32,9 @@ const About = () => {
     >
       <motion.h1
         variants={item}
-        className="text-Primary text-4xl font-bold font-['Roboto']"
+        className="text-black text-4xl font-bold font-['Roboto']"
       >
-        About Me
+        About<span className="text-Primary"> Me</span>
       </motion.h1>
 
       <motion.p
@@ -44,14 +44,10 @@ const About = () => {
         I'm Nesrine, a web developer and aspiring UI/UX designer based in
         Tunisia. With a background in development and a growing passion for
         visual design, I enjoy building user-friendly websites using
-        technologies like{" "}
-        <span className="text-cyan-600 font-medium">Next.js</span> and{" "}
-        <span className="text-cyan-600 font-medium">Tailwind CSS</span>. I also
-        love exploring tools like{" "}
-        <span className="text-purple-600 font-medium">Figma</span> to design
-        modern, clean, and accessible interfaces. I'm currently focused on
-        meaningful personal projects, improving my skills, and exploring new
-        opportunities to grow in tech.
+        technologies like Next.js and Tailwind CSS. I also love exploring tools
+        like Figma to design modern, clean, and accessible interfaces. I'm
+        currently focused on meaningful personal projects, improving my skills,
+        and exploring new opportunities to grow in tech.
       </motion.p>
     </motion.div>
   );

@@ -14,7 +14,7 @@ const Carousel = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="relative py-4 px-4 sm:px-8 max-w-full sm:max-w-[500px] mx-auto ">
+    <div className="relative py-4 px-4 sm:px-8 max-w-full sm:max-w-[500px] mx-auto border-2 border-gray-200 bg-white rounded-lg shadow-lg overflow-hidden">
       {/* Custom Navigation Buttons */}
       <button
         ref={prevRef}

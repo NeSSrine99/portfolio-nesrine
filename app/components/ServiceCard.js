@@ -14,20 +14,20 @@ const ElegantServiceCard = ({
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay }}
       whileHover={{ scale: 1.03 }}
-      className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 max-w-sm"
+      className="relative group  rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-white max-w-sm hover:border-pink-400 "
     >
       {/* Icon container */}
-      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-tr from-cyan-400 to-purple-500 flex items-center justify-center shadow-md">
+      <div className="absolute  top-0 left-6  -translate-y-1/2 bg-gray-50 px-4">
         <img src={`/images/${logo}`} alt={name} className="w-8 h-8" />
       </div>
 
       {/* Title */}
-      <h3 className="text-center text-lg font-semibold text-gray-800 group-hover:text-cyan-600 transition duration-300">
+      <h3 className="text-start text-lg font-semibold text-gray-800 group-hover:text-pink-400 transition duration-300">
         {name}
       </h3>
 
       {/* Description */}
-      <p className="text-center text-sm text-gray-500 mt-3 leading-relaxed">
+      <p className="text-start text-sm text-gray-500 mt-3 leading-relaxed">
         {desc}
       </p>
     </motion.div>

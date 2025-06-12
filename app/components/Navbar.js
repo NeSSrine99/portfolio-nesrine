@@ -16,13 +16,14 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="flex items-center justify-between w-full text-white px-4 pt-4"
+      className="flex items-center justify-between w-full text-white bg-Primary/70 px-4 py-4"
     >
       <div className="flex items-center gap-2">
-        <TbDeviceDesktopCode size={36} />
+        <TbDeviceDesktopCode size={40} className="text-white" />
+
         <div>
-          <p className="font-bold text-lg">Nesrine Nasri</p>
-          <p className="text-sm opacity-75">Web Developer | Designer</p>
+          <p className="font-bold ">Nesrine Nasri</p>
+          <p className="text-sm ">Web Developer | Designer</p>
         </div>
       </div>
 

@@ -24,7 +24,7 @@ const DesignList = () => {
         A selection of user interface and web designs I've crafted with focus on
         usability, accessibility, and beauty.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 sm:gap-5 gap-4 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 sm:gap-6 gap-4 ">
         {designs.map((design) => (
           <DesignCard
             key={design.id}

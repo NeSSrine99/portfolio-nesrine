@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import ScrollingSkills from "./ScrollingSkills";
 import Carousel from "./CarouselSoftskills";
 import CarouselCertif from "./CarouselCertif";
+import AcademicSection from "./AcademicSection";
 
 // تعريف الحركة بالـ framer-motion
 const fadeInUp = {
@@ -36,8 +37,15 @@ const CardWrapper = ({ children, index }) => (
 
 const Grid = () => {
   return (
-    <section className="px-4 py-14 b">
-      {/* العنوان المتحرك */}
+    <section className="relative px-4 py-14 lg:px-[120px] overflow-hidden">
+      {/* Beautiful background gradient and shapes */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120vw] h-[60vh] bg-gradient-to-br from-Primary via-pink-400 to-gray-50 opacity-70 blur-2xl rounded-b-full" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-300 opacity-30 rounded-full blur-3xl" />
+        <div className="absolute top-10 left-10 w-40 h-40 bg-Primary opacity-20 rounded-full blur-2xl" />
+        <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-white opacity-10 rounded-full blur-3xl" />
+      </div>
+
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -49,32 +57,25 @@ const Grid = () => {
           My Skills & Achievements
         </span>
       </motion.h2>
-
-      {/* توزيع الكروت */}
       <div className="flex flex-col gap-10 ">
         {/* Tech Stack */}
-        <CardWrapper index={1}>
-          <h3 className="text-xl font-semibold mb-4 text-pink-500">
-            Tech Stack
-          </h3>
-          <ScrollingSkills />
-        </CardWrapper>
+
+        <ScrollingSkills />
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+        <div>
+          <AcademicSection />
+        </div>
+
         <div className="flex items-center justify-center gap-6 flex-wrap">
           {/* Soft Skills */}
-          <CardWrapper index={0}>
-            <h3 className="text-xl font-semibold mb-4 text-pink-500">
-              Soft Skills
-            </h3>
-            <Carousel />
-          </CardWrapper>
+
+          <Carousel />
 
           {/* Certifications */}
-          <CardWrapper index={2}>
-            <h3 className="text-xl font-semibold mb-4 text-pink-500">
-              Certifications
-            </h3>
-            <CarouselCertif />
-          </CardWrapper>
+
+          <CarouselCertif />
         </div>
       </div>
     </section>
