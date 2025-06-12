@@ -24,7 +24,7 @@ const DesignCard = ({
       whileHover={{ scale: 1.03, boxShadow: "0px 8px 24px rgba(0,0,0,0.15)" }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="min-w-[280px] max-w-[350px] h-[200px] mx-auto relative rounded-2xl overflow-hidden border-4 border-Primary bg-white"
+      className="w-full max-w-[350px] h-[200px] mx-auto relative rounded-2xl overflow-hidden border-4 border-Primary bg-white"
     >
       <Swiper
         modules={[Autoplay, Pagination]}

@@ -16,10 +16,9 @@ import TestimonialsSection from "./components/TestimonialsSection";
 
 export default function Home() {
   return (
-    <main className="my-20 mx-4 bg-gray-50 dark:bg-gray-900">
+    <main className="my-20  bg-gray-50  ">
       <About />
       <Grid />
-
       <ListProjectCard />
       <ListCardService />
       <DesignList />
