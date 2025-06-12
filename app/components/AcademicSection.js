@@ -7,21 +7,20 @@ import { FaGraduationCap } from "react-icons/fa6";
 const academics = [
   {
     title: "Technologie d'information et de communication",
-    institution: "Institut Supérieur des Études Technologiques",
-    description1: "Maîtrise des réseaux et systèmes",
-    description2: "Compétences en développement web et mobile",
-    description3: "Formation en gestion de projet informatique",
-    description4: "Développement Web: HTML, CSS, JS",
-    description5: "Front-End avec React, Next.js",
+    institution: "Higher Institute of Technological Studies",
+    description1: "Proficiency in networks and systems",
+    description2: "Skills in web and mobile development",
+    description3: "Training in IT project management",
+    description4: "Web development: HTML, CSS, JavaScript",
+    description5: "Front-End with React and Next.js",
   },
   {
-    title: "Certification en Développement Frontend des Applications Web",
-    institution:
-      "Centre de Formation et de Promotion du Travail Indépendant de Tozeur",
-    description1: "Built real-world projects using React, Node.js, and APIs.",
+    title: "Certification in Frontend Web Application Development",
+    institution: "Training and Promotion Center for Independent Work – Tozeur",
+    description1: "Built real-world projects using React, Node.js, and APIs",
     description2: "UI/UX Design",
-    description3: "Intégration web",
-    description4: "Développement frontend",
+    description3: "Web integration",
+    description4: "Frontend development",
   },
 ];
 
