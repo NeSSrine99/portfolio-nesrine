@@ -43,7 +43,7 @@ const ContactCard = () => {
             }}
           >
             <div className="text-xl">{link.icon}</div>
-            <span className="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
               {link.label}
             </span>
           </motion.a>
