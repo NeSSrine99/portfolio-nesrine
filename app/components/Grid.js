@@ -46,7 +46,7 @@ const Grid = () => {
         className="text-center text-white text-3xl font-bold mb-12"
       >
         <span className="text-transparent bg-clip-text bg-Primary">
-          Information
+          My Skills & Achievements
         </span>
       </motion.h2>
 

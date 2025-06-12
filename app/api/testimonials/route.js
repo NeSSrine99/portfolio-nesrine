@@ -1,34 +1,47 @@
-// app/api/testimonials/route.js (إذا كنت تستخدم Next.js 13 أو 14 مع App Router)
-
 const Testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    title: "Product Manager at TechCorp",
-    image:
-      "https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg?semt=ais_hybrid&w=740",
+    name: "Roua Sallami",
+    title: "Front-End Developer",
+    image: "/images/roua.jpeg",
     testimonial:
       "Working with this team has been an incredible experience. Their attention to detail and passion for quality .",
   },
   {
     id: 2,
-    name: "John Doe",
-    title: "Marketing Manager",
+    name: "Ikhlas Nasri",
+    title: "Front-End Developer",
     testimonial:
       "Great experience working with the team. They delivered beyond expectations.",
 
-    image:
-      "https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg?semt=ais_hybrid&w=740",
+    image: "/images/ikhlas.png",
   },
   {
     id: 3,
-    name: "Lisa Ray",
-    title: "Product Designer",
+    name: "Rahma Habeili",
+    title: "Mobile Developer",
     testimonial:
       "The service was smooth, professional, and efficient. Highly recommend!",
 
-    image:
-      "https://img.freepik.com/photos-premium/jeune-homme-isole-bleu_1368-124991.jpg?semt=ais_hybrid&w=740",
+    image: "/images/rahma.jpg",
+  },
+  {
+    id: 4,
+    name: "Ahmed Tombari",
+    title: "Full-Stack Developer",
+    testimonial:
+      "The service was smooth, professional, and efficient. Highly recommend!",
+
+    image: "/images/ahmed.jpg",
+  },
+  {
+    id: 5,
+    name: "Ahmed Tombari",
+    title: "Full-Stack Developer",
+    testimonial:
+      "The service was smooth, professional, and efficient. Highly recommend!",
+
+    image: "/images/ahmed.jpg",
   },
 ];
 
