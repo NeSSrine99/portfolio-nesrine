@@ -14,7 +14,7 @@ const Footer = () => {
   const [isPanelOpen, setIsPanelOpen] = useState(false);
 
   return (
-    <footer className="relative w-full pt-4 pb-10 bg-PrimaryHover overflow-hidden">
+    <footer className="relative w-full pt-4 pb-10 bg-white overflow-hidden">
       {/* ✅ Hidden Panel */}
       {/* <div
         className={`absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-Primary shadow-xl rounded-t-3xl transition-all duration-500 z-100 ${

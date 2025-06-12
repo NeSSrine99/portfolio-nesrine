@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="relative bg-[url('/images/header2.jpeg')] bg-cover bg-center text-white rounded-b-3xl pb-20 lg:h-[600px] sm:h-[400px] ">
+    <header className="bg-white relative bg-[url('/images/header2.jpeg')] bg-cover bg-center text-white rounded-b-3xl pb-20 lg:h-[600px] sm:h-[400px] ">
       <div className="absolute inset-0 bg-black/50 rounded-b-3xl"></div>
 
       <motion.div
