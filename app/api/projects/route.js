@@ -71,7 +71,7 @@ const Projects = [
     role: "Full-Stack",
     linkSociete: "www.linkedin.com/in/nesrine-nasri-b6a348244",
     desc: "A modern pharmacy website that allows users to browse and order medicines online, view product details, and get health advice through a user-friendly interface.",
-    liveSite: "",
+    liveSite: "https://farmaconnect-gray.vercel.app/",
     codeGitlab: "https://gitlab.com/devopsproject7692523/farmaconnect.git",
     iconLists: ["/images/Nextjs.png", "/images/tail.svg", "/images/clerk.svg"],
   },
