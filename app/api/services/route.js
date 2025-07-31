@@ -1,7 +1,7 @@
 const Services = [
   {
     id: 1,
-    logo: "group.svg",
+    logo: "design.svg",
     name: "Designer",
     desc: "Creative designers craft stunning user interfaces, blending color, typography, and layout to ensure beautiful and intuitive digital experiences for every user.",
   },
