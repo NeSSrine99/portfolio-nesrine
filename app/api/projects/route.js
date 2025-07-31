@@ -1,8 +1,3 @@
-import { FaBootstrap, FaNodeJs, FaReact } from "react-icons/fa";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiClerk, SiRedux, SiSass, SiStrapi } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
-
 const Projects = [
   {
     id: 1,
@@ -26,24 +21,50 @@ const Projects = [
   },
   {
     id: 2,
-    imageDev: "/images/e-commerce.png",
-    imageFigma: "/images/videoE-commerce.mp4",
-    name: "Naïma",
+    imageDev: "/images/guestbook.png",
+    name: "Guestbook",
     nameSociete: "Personal",
     role: "Full-Stack",
-    linkSociete: "www.linkedin.com/in/nesrine-nasri-b6a348244",
-    desc: "Naïma is a powerful e-commerce platform with an integrated dashboard, allowing smooth management of products, orders, and customers through an intuitive interface and advanced tools.",
-    liveSite: "",
-    codeGitlab: "https://gitlab.com/devopsproject7692523/e-commerce.git",
+    linkSociete: "https://www.linkedin.com/in/nesrine-nasri-b6a348244",
+    desc: "Guestbook is a simple full-stack application where users can submit and view public messages. Built with Next.js for the frontend and Node.js/Express for the backend, deployed on Vercel and Render.",
+    liveSite: "https://guestbook-lyart.vercel.app/",
+    codeGitlab: "https://github.com/NeSSrine99/guestbook",
     iconLists: [
       "/images/Nextjs.png",
       "/images/tail.svg",
-      "/images/clerk.svg",
-      "/images/strapi.svg",
+      "/images/node-js.svg",
+      "/images/render.svg",
     ],
   },
+
   {
     id: 3,
+    imageDev: "/images/imgFarmaconnect.png",
+    name: "Farmaconnect",
+    nameSociete: "Personal",
+    role: "Full-Stack",
+    linkSociete: "www.linkedin.com/in/nesrine-nasri-b6a348244",
+    desc: "A modern pharmacy website that allows users to browse and order medicines online, view product details, and get health advice through a user-friendly interface.",
+    liveSite: "https://farmaconnect-gray.vercel.app/",
+    codeGitlab: "https://gitlab.com/devopsproject7692523/farmaconnect.git",
+    iconLists: ["/images/Nextjs.png", "/images/tail.svg", "/images/clerk.svg"],
+  },
+
+  {
+    id: 4,
+    imageDev: "/images/rent-house.png",
+    imageFigma: "/images/vedioRentHouse.mp4",
+    name: "Rent House",
+    nameSociete: "Personal",
+    role: "Full-Stack",
+    linkSociete: "www.linkedin.com/in/nesrine-nasri-b6a348244",
+    desc: "A modern rental website that allows users to browse and book houses online, view property details, and get in touch with landlords through a user-friendly interface.",
+    liveSite: "https://rent-house-wheat.vercel.app/",
+    codeGitlab: "https://github.com/NeSSrine99/ExamenBlanc",
+    iconLists: ["/images/Nextjs.png", "/images/tail.svg"],
+  },
+  {
+    id: 5,
     imageDev: "/images/Ipalm-site.png",
     imageFigma: "/images/Ipalm-site.png",
     nameSociete: "iPalm",
@@ -60,34 +81,6 @@ const Projects = [
       "/images/gatsby.svg",
       "/images/i18n.svg",
     ],
-  },
-
-  {
-    id: 4,
-    imageDev: "/images/imgFarmaconnect.png",
-    imageFigma: "/images/vedioFarmaconnect.mp4",
-    name: "Farmaconnect",
-    nameSociete: "Personal",
-    role: "Full-Stack",
-    linkSociete: "www.linkedin.com/in/nesrine-nasri-b6a348244",
-    desc: "A modern pharmacy website that allows users to browse and order medicines online, view product details, and get health advice through a user-friendly interface.",
-    liveSite: "https://farmaconnect-gray.vercel.app/",
-    codeGitlab: "https://gitlab.com/devopsproject7692523/farmaconnect.git",
-    iconLists: ["/images/Nextjs.png", "/images/tail.svg", "/images/clerk.svg"],
-  },
-
-  {
-    id: 5,
-    imageDev: "/images/rent-house.png",
-    imageFigma: "/images/vedioRentHouse.mp4",
-    name: "Rent House",
-    nameSociete: "Personal",
-    role: "Full-Stack",
-    linkSociete: "www.linkedin.com/in/nesrine-nasri-b6a348244",
-    desc: "A modern rental website that allows users to browse and book houses online, view property details, and get in touch with landlords through a user-friendly interface.",
-    liveSite: "https://rent-house-wheat.vercel.app/",
-    codeGitlab: "https://github.com/NeSSrine99/ExamenBlanc",
-    iconLists: ["/images/Nextjs.png", "/images/tail.svg"],
   },
 
   {
@@ -120,7 +113,7 @@ const Projects = [
     id: 8,
     imageDev: "/images/portfolio.png",
     imageFigma: "/images/vedioFoodzy.mp4",
-    name: "Foodzy",
+    name: "Portfolio",
     nameSociete: "Personal",
     role: "Full-Stack",
     linkSociete: "www.linkedin.com/in/nesrine-nasri-b6a348244",
