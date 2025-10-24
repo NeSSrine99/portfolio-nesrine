@@ -5,7 +5,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const CertifCard = ({
   id,
-  image = "/images/Cute.jpg",
+  image = "",
   title = "Front-End",
   platform = "Coursera",
   date = "12/06/2024",
@@ -13,7 +13,7 @@ const CertifCard = ({
 }) => {
   return (
     <div className="relative max-w-[200px] max-h-[200px]  w-full overflow-hidden  group  hover:shadow-xl transition-shadow duration-300 border-2b ring-2 ring-Primary ">
-      {/* صورة الشهادة */}
+      {/* placeholder for certificate image */}
       <img
         src={image}
         alt={title}
