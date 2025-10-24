@@ -4,7 +4,7 @@ const Design = [
   {
     id: 1,
     images: ["/images/plantea1.png", "/images/plantea2.png"],
-    link: "https://www.figma.com/design/gbv7JZvCEj9NAA62KCs6lK/Plantea-NesrineNasri?node-id=1-4222&t=zyYDzIAB8nekacvo-1",
+    link: "https://www.figma.com/design/gbv7JZvCEj9NAA62KCs6lK/Plantea-NesrineNasri?node-id=19-149&t=ufgriHs1ctTQ4Bv3-1",
   },
   {
     id: 2,
@@ -36,7 +36,12 @@ const Design = [
       "/images/farmaconnect2.png",
       "/images/farmaconnect3.png",
     ],
-    link: "https://www.figma.com/design/gbv7JZvCEj9NAA62KCs6lK/Plantea-NesrineNasri?node-id=1-4222&t=zyYDzIAB8nekacvo-1",
+    link: "https://www.figma.com/design/HBG7Y7jJaG6lMn99sXi13g/PharmaConnect?node-id=11-35&t=79CcdotHtGF6yiIB-1",
+  },
+  {
+    id: 5,
+    images: ["/images/handmade.png"],
+    link: "https://www.figma.com/design/lRcV12xMHsGydoCERyHDMS/HandmadesNesrine?node-id=0-1&t=4GqEaK53Yla6D0BU-1",
   },
 ];
 

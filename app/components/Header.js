@@ -26,7 +26,7 @@ const Header = () => {
         <p className="text-lg tracking-widest font-light">
           Let’s build something great together!
         </p>
-        <Button variant="secondary">Show My Work</Button>
+        <Button href="#projects">Show My Work</Button>
       </motion.div>
     </header>
   );

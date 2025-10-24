@@ -21,18 +21,19 @@
 }
 /* //  Components button variant // */
 .button-hover-gradient {
-  background-color: var(--color-Primary); /* اللون الأساسي */
-  color: white;
+  background-color: var(--color-Primary);
+  color: lab(83.51% 16.23 -15.27);
   border-radius: 0.75rem;
   padding: 0.5rem 1rem;
   transition: background-image 0.3s ease-in-out;
 }
 
 .button-hover-gradient:hover {
-  background-image: var(--bg-hoverButton);
+  background-image: var(--color-red-50);
+  color: lab(19.18% 46.25 -41.28);
 }
 .button-secondary-gradient {
-  background-color: white;
+  background-color: rgb(198, 27, 192);
   color: var(--color-Primary);
   border: 2px solid transparent;
   border-image: var(--bg-hoverButton);
@@ -46,7 +47,7 @@
 
 .button-secondary-gradient:hover {
   background-image: var(--bg-hoverButton);
-  color: white;
+  color: rgb(187, 40, 170);
 }
 .button-third {
   background: none;

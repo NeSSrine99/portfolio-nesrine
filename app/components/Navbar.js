@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { TbDeviceDesktopCode } from "react-icons/tb";
-import { CiMail } from "react-icons/ci";
+
 import { FiAlignRight } from "react-icons/fi";
-import Button from "./Button";
+
 import { motion } from "framer-motion";
 
 const Navbar = () => {
