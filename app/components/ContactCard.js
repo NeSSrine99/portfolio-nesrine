@@ -16,7 +16,7 @@ const ContactCard = () => {
       label: "GitLab",
     },
     {
-      href: "/cv-nesrin.pdf",
+      href: "/images/CV-Nesrine.pdf",
       icon: <FaFileDownload />,
       label: "Download CV",
       download: true,
