@@ -60,7 +60,7 @@ const Navbar = () => {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle Menu"
-          className="text-white cursor-pointer focus:outline-none"
+          className="text-white cursor-pointer focus:outline"
         >
           <FiAlignRight size={28} />
         </button>

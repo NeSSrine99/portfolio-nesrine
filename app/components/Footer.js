@@ -78,7 +78,7 @@ const Footer = () => {
           >
             <FaGithub
               size={24}
-              className="text-xl hover:text-black cursor-pointer transition"
+              className="text-xl hover:text-black cursor-pointer transition hover:scale-130"
             />
           </a>
           <a
@@ -88,7 +88,7 @@ const Footer = () => {
           >
             <FaLinkedin
               size={24}
-              className="text-xl hover:text-blue-600 cursor-pointer transition"
+              className="text-xl hover:text-blue-600 cursor-pointer transition hover:scale-130"
             />
           </a>
           <a
@@ -98,7 +98,7 @@ const Footer = () => {
           >
             <FaGitlab
               size={24}
-              className="text-xl hover:text-orange-600 cursor-pointer transition"
+              className="text-xl hover:text-orange-600 cursor-pointer transition hover:scale-130"
             />
           </a>
         </div>
