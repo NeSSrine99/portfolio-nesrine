@@ -12,15 +12,16 @@ import Certifications from "../data/certifications";
 
 const CarouselCertif = () => {
   return (
-    <div className="w-[280px]  mx-auto py-4 px-4 relative  rounded border-2 shadow border-gray-200 bg-white">
+    <div className="w-[280px] mx-auto py-4 px-4 relative rounded border-2 shadow border-gray-200 bg-white">
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={5}
         slidesPerView={1.5}
         centeredSlides={true}
-        loop={true}
-        navigation={true}
-        pagination={{ clickable: true }}
+        // ✅ Loop only if enough slides exist
+        loop={Certifications.length > 2}
+        navigation={Certifications.length > 1}
+        pagination={Certifications.length > 1 ? { clickable: true } : false}
         className="mySwiper custom-swiper"
         style={{ paddingBottom: "30px" }}
       >
@@ -29,7 +30,7 @@ const CarouselCertif = () => {
             key={certification.id}
             className="scale-95 transition-transform duration-300 hover:scale-100"
           >
-            <div className="shadow-xl  overflow-hidden">
+            <div className="shadow-xl overflow-hidden">
               <CertifCard {...certification} />
             </div>
           </SwiperSlide>
