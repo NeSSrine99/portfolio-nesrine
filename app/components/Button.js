@@ -9,17 +9,19 @@ const Button = ({
   onClick,
   href,
 }) => {
-  const baseStyles = "px-4 py-2 rounded-xl";
+  const baseStyles =
+    "px-6 py-3 rounded-xl font-semibold text-white transition-all duration-300 ease-in-out transform";
+
   const variants = {
-    primary: "button-hover-gradient hover:button-hover-gradient:hover",
+    primary:
+      "bg-gradient-to-r from-purple-300 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-red-500 hover:to-purple-500 shadow-lg hover:shadow-xl",
     secondary:
-      "button-secondary-gradient hover:button-secondary-gradient:hover",
-    third: "button-third",
+      "bg-gradient-to-r from-blue-400 via-teal-400 to-green-400 hover:from-teal-400 hover:via-green-400 hover:to-blue-400 shadow-md hover:shadow-lg",
+    third: "bg-gray-800 text-white hover:bg-gray-700 shadow hover:shadow-md",
   };
 
   const classes = `${baseStyles} ${variants[variant]} ${className}`;
 
-  // 🔹 Case 1: href starts with "#" → scroll to section on same page
   if (href && href.startsWith("#")) {
     return (
       <a href={href} className={`${classes} inline-block`}>
@@ -28,7 +30,6 @@ const Button = ({
     );
   }
 
-  // 🔹 Case 2: Internal Next.js page
   if (href && href.startsWith("/")) {
     return (
       <Link href={href} className={`${classes} inline-block`}>
@@ -37,7 +38,6 @@ const Button = ({
     );
   }
 
-  // 🔹 Case 3: External link
   if (href) {
     return (
       <a
@@ -51,7 +51,6 @@ const Button = ({
     );
   }
 
-  // 🔹 Default button
   return (
     <button type={type} className={classes} onClick={onClick}>
       {children}

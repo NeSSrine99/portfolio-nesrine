@@ -20,8 +20,7 @@ const Header = () => {
           Hello, I'm Nesrine Nasri
         </p>
         <h1 className="text-3xl lg:text-4xl font-bold leading-tight">
-          A passionate Web Developer crafting modern and efficient digital
-          experiences.
+          Creating interactive, high-performance web experiences that inspire
         </h1>
         <p className="text-lg tracking-widest font-light">
           Let’s build something great together!
