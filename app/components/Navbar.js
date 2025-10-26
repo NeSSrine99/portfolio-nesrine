@@ -16,7 +16,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="flex items-center justify-between w-full text-white bg-Primary/70 px-4 py-4"
+      className="flex items-center justify-between w-full text-white bg-Primary px-4 py-4"
     >
       <div className="flex items-center gap-2">
         <TbDeviceDesktopCode size={40} className="text-white" />
@@ -54,7 +54,7 @@ const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute top-20 right-4 bg-white text-black p-4 rounded-lg shadow-lg z-50 flex flex-col gap-2"
+          className="absolute top-18 right-0 left-0 bg-Primary text-white p-4 rounded-lg shadow-lg z-50 flex flex-col gap-2"
         >
           <Link href="#about">About</Link>
           <Link href="#projects">Projects</Link>
