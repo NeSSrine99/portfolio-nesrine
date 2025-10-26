@@ -36,9 +36,7 @@ const TestimonialsSection = () => {
         <h2 className="text-3xl font-bold text-gray-800 mb-2">
           What People Say
         </h2>
-        <p className="text-gray-500">
-          Here are some kind words from our clients
-        </p>
+        <p className="text-gray-500">Hear from people I’ve collaborated with</p>
       </div>
       <main className="flex flex-col items-center justify-center py-10 lg:px-20">
         <motion.div
